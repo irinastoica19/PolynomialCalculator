@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.Controller">
+   <Button fx:id="additionButton" layoutX="190.0" layoutY="336.0" mnemonicParsing="false" onAction="#addPolynomials"
+           prefHeight="74.0" prefWidth="142.0" text="+">
+      <font>
+         <Font name="Bodoni MT Condensed" size="36.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="secondPolynomialTextField" layoutX="207.0" layoutY="174.0" prefHeight="40.0" prefWidth="305.0">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="firstPolynomialTextField" layoutX="207.0" layoutY="104.0" prefHeight="40.0" prefWidth="305.0">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </TextField>
+   <Button fx:id="multiplicationButton" layoutX="190.0" layoutY="458.0" mnemonicParsing="false"
+           onAction="#multiplyPolynomials" prefHeight="74.0" prefWidth="142.0" text="x">
+      <font>
+         <Font size="36.0"/>
+      </font>
+   </Button>
+   <Button fx:id="derivationButton" layoutX="383.0" layoutY="584.0" mnemonicParsing="false" onAction="#derivePolynomial"
+           prefHeight="74.0" prefWidth="142.0" text="dP(x)/dx" wrapText="true">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Button>
+   <Button fx:id="divisionButton" layoutX="383.0" layoutY="458.0" mnemonicParsing="false" onAction="#dividePolynomials"
+           prefHeight="74.0" prefWidth="142.0" text="/">
+      <font>
+         <Font size="36.0"/>
+      </font>
+   </Button>
+   <Button fx:id="integrationButton" layoutX="190.0" layoutY="582.0" mnemonicParsing="false"
+           onAction="#integratePolynomial" prefHeight="74.0" prefWidth="142.0" text="∫">
+      <font>
+         <Font size="36.0"/>
+      </font>
+   </Button>
+   <Button fx:id="subtractionButton" layoutX="383.0" layoutY="335.0" mnemonicParsing="false"
+           onAction="#subtractPolynomials" prefHeight="74.0" prefWidth="142.0" text="-">
+      <font>
+         <Font size="36.0"/>
+      </font>
+   </Button>
+   <Label layoutX="243.0" layoutY="44.0" prefHeight="35.0" prefWidth="237.0" text="Polynomial Calculator"
+          wrapText="true">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <Button fx:id="clearFirstTextbox" layoutX="528.0" layoutY="109.0" mnemonicParsing="false"
+           onAction="#clearFirstPolynomial" text="Clear"/>
+   <Button fx:id="clearSecondTextbox" layoutX="528.0" layoutY="179.0" mnemonicParsing="false"
+           onAction="#clearSecondPolynomial" text="Clear"/>
+   <TextField fx:id="resultTextField" editable="false" layoutX="209.0" layoutY="262.0" prefHeight="40.0"
+              prefWidth="305.0">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </TextField>
+   <Label layoutX="48.0" layoutY="182.0" prefHeight="25.0" prefWidth="142.0" text="Second Polynomial">
+      <font>
+         <Font name="Georgia" size="16.0"/>
+      </font>
+   </Label>
+   <Label layoutX="136.0" layoutY="272.0" prefHeight="21.0" prefWidth="54.0" text="Result">
+      <font>
+         <Font name="Georgia" size="16.0"/>
+      </font>
+   </Label>
+   <Label layoutX="65.0" layoutY="109.0" prefHeight="31.0" prefWidth="125.0" text="First Polynomial">
+      <font>
+         <Font name="Georgia" size="16.0"/>
+      </font>
+   </Label>
+   <Label fx:id="errorLabel" layoutX="65.0" layoutY="673.0" prefHeight="21.0" prefWidth="590.0" textAlignment="CENTER">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Button fx:id="closeButton" layoutX="607.0" layoutY="648.0" mnemonicParsing="false" onAction="#closeButtonAction"
+           prefHeight="51.0" prefWidth="96.0" text="Exit">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
+</AnchorPane>
